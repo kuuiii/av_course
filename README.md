@@ -28,6 +28,6 @@ Launch the Simulation World
 To launch the custom mapping node along with the simulation environment:
 
 ```bash
-	ros2 launch my_robot_controler mapping_launch.py
+	ros2 launch my_robot_controller mapping_launch.py
 ```
 
