@@ -7,25 +7,27 @@ This repository contains the ROS2 workspace (ros2_ws) developed as part of the A
 Clone the project
 
 ```bash
-  git clone https://github.com/kuuiii/av_course.git
+	git clone https://github.com/kuuiii/av_course.git
 ```
 
 Navigate to the ROS2 workspace and build the package:
 
 ```bash
-  cd ros2_ws
-  colcon build --symlink-install
+	cd ros2_ws
+	colcon build --symlink-install
+	source ~/.bashrc
 ```
 
-Source the workspace:
+Launch the Simulation World
 
 ```bash
-  source install/setup.bash
+	echo 'export TURTLEBOT3_MODEL=burger' >> ~/.bashrc
+	source ~/.bashrc
 ```
 
 To launch the custom mapping node along with the simulation environment:
 
 ```bash
-  ros2 launch my_robot_controler mapping_launch.py
+	ros2 launch my_robot_controler mapping_launch.py
 ```
 
