@@ -62,3 +62,4 @@ Generated occupancy grid maps are stored in the map/ directory within the my_rob
 Documentation and Reporting
 
 Detailed documentation, including the process description, images, and conclusions, can be found in the project documentation submitted separately as part of the Autonomous Vehicle Practical Course.
+
