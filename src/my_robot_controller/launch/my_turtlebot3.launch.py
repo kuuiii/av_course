@@ -33,6 +33,12 @@ def generate_launch_description():
     x_pose = LaunchConfiguration('x_pose', default='0.0')
     y_pose = LaunchConfiguration('y_pose', default='0.0')
 
+    map_file = os.path.join(
+        get_package_share_directory('my_robot_controller'),
+        'map',
+        'map.yaml'
+    )
+
     world = os.path.join(
         get_package_share_directory('my_robot_controller'),
         'world',
